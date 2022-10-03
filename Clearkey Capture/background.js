@@ -30,7 +30,7 @@ function requestToClipboard(dataId, tabTd) {
 		
 		chrome.browserAction.setBadgeBackgroundColor({color: "#FF0000", tabId: tabTd});
 		chrome.browserAction.setBadgeText({text: "📋", tabId: tabTd});
-		alert("The required data to download this clearkey video has been copied to your clipboard successfully!\n\nNow go to https://t.me/drm_downloader_robot and paste it and send it to the bot.");
+		console.log("The required data to download this clearkey video has been copied to your clipboard successfully!\n\nNow go to https://t.me/drm_downloader_robot and paste it and send it to the bot.");
 	}
 	gen_link.send(data);
 }

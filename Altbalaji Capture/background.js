@@ -68,7 +68,7 @@ function requestToClipboard(tabId) {
 
 				chrome.browserAction.setBadgeBackgroundColor({color: "#FF0000", tabId: details.id});
 				chrome.browserAction.setBadgeText({text: "📋", tabId: details.id});
-				alert("The altbalaji link and the mpd link and the generated link of widevine license curl data has been copied to your clipboard successfully!\n\nNow go to https://t.me/drm_downloader_robot and paste it and send it to the bot.\n\nIf you need to play this video on the site please remember to disable this extension and reload the page.");
+				console.log("The altbalaji link and the mpd link and the generated link of widevine license curl data has been copied to your clipboard successfully!\n\nNow go to https://t.me/drm_downloader_robot and paste it and send it to the bot.\n\nIf you need to play this video on the site please remember to disable this extension and reload the page.");
 
 			}
 			gen_link.send(data);

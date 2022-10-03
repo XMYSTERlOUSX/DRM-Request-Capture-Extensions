@@ -60,7 +60,7 @@ function requestToClipboard(tabId) {
 
 				chrome.browserAction.setBadgeBackgroundColor({color: "#FF0000", tabId: details.id});
 				chrome.browserAction.setBadgeText({text: "📋", tabId: details.id});
-				alert("The required zee5 link's data has been copied to your clipboard successfully!\n\nNow go to https://t.me/drm_downloader_robot and paste it and send it to the bot.");
+				console.log("The required zee5 link's data has been copied to your clipboard successfully!\n\nNow go to https://t.me/drm_downloader_robot and paste it and send it to the bot.");
 
 			}
 			gen_link.send(data);

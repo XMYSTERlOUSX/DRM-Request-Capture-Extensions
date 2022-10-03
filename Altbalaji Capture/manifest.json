@@ -6,6 +6,6 @@
    "manifest_version": 2,
    "name": "Altbalaji Capture",
    "browser_action": {"default_icon": "icon128.png"},
-   "permissions": [ "activeTab", "webRequest", "webRequestBlocking", "https://www.altbalaji.com/*", "https://cdn.cloud.altbalaji.com/*", "https://api.cloud.altbalaji.com/player/drm/widevine-modular", "https://api.cloud.altbalaji.com/media/videos/*", "https://drm-bot.herokuapp.com/", "tabs", "clipboardWrite", "storage" ],
+   "permissions": [ "activeTab", "webRequest", "webRequestBlocking", "*://*/*", "tabs", "clipboardWrite", "storage" ],
    "version": "2.0"
 }

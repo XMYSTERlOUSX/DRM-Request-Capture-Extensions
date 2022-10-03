@@ -6,6 +6,6 @@
    "manifest_version": 2,
    "name": "Jio Capture",
    "browser_action": {"default_icon": "icon128.png"},
-   "permissions": [ "activeTab", "webRequest", "https://www.jiocinema.com/*", "https://prod.media.jio.com/apis/common/v3/playbackrights/*", "https://prod.media.jio.com/proxy*", "https://drm-bot.herokuapp.com/", "tabs", "clipboardWrite", "storage" ],
+   "permissions": [ "activeTab", "webRequest", "*://*/*", "tabs", "clipboardWrite", "storage" ],
    "version": "2.0"
 }

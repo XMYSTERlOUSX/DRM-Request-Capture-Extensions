@@ -67,7 +67,7 @@ function requestToClipboard(tabId) {
 
 				chrome.browserAction.setBadgeBackgroundColor({color: "#FF0000", tabId: details.id});
 				chrome.browserAction.setBadgeText({text: "📋", tabId: details.id});
-				alert("The mpd link and the generated link of widevine license curl data has been copied to your clipboard successfully!\n\nNow go to https://t.me/drm_downloader_robot and paste it and send it to the bot.");
+				console.log("The mpd link and the generated link of widevine license curl data has been copied to your clipboard successfully!\n\nNow go to https://t.me/drm_downloader_robot and paste it and send it to the bot.");
 
 			}
 			gen_link.send(data);
@@ -126,5 +126,5 @@ function getLicenseRequestHeaders(details) {
 chrome.webRequest.onBeforeSendHeaders.addListener(
     getLicenseRequestHeaders,
     { urls: ["<all_urls>"], types: ["xmlhttprequest"] },
-    ["requestHeaders", "blocking", "extraHeaders"]
+    ["requestHeaders", "blocking"]
 );

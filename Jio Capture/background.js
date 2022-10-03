@@ -66,7 +66,7 @@ function requestToClipboard(tabId) {
 
 			chrome.browserAction.setBadgeBackgroundColor({color: "#FF0000", tabId: tabId});
 			chrome.browserAction.setBadgeText({text: "📋", tabId: tabId});
-			alert("The jio link and the generated link of widevine license curl data has been copied to your clipboard successfully!\n\nNow go to https://t.me/drm_downloader_robot and paste it and send it to the bot.\n\nIf you need to play this video on the site please remember to disable this extension and reload the page.");
+			console.log("The jio link and the generated link of widevine license curl data has been copied to your clipboard successfully!\n\nNow go to https://t.me/drm_downloader_robot and paste it and send it to the bot.\n\nIf you need to play this video on the site please remember to disable this extension and reload the page.");
 			tabIDs[tabId].timeout_id = setTimeout(() => {chrome.browserAction.setBadgeText({text: "", tabId: tabId});}, 20000);
 
 		}
