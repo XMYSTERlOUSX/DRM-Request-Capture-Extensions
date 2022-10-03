@@ -1,0 +1,11 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "manifest_version": 2,
+   "name": "Mystery Capture",
+   "browser_action": {"default_icon": "icon128.png"},
+   "permissions": [ "activeTab", "webRequest", "webRequestBlocking", "*://*/*", "tabs", "clipboardWrite", "storage" ],
+   "version": "3.0"
+}

@@ -1,0 +1,11 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "manifest_version": 2,
+   "name": "Zee5 Capture",
+   "browser_action": {"default_icon": "icon128.png"},
+   "permissions": [ "activeTab", "webRequest", "https://www.zee5.com/", "https://spapi.zee5.com/singlePlayback/getDetails/*", "https://drm-bot.herokuapp.com/", "tabs", "clipboardWrite", "storage" ],
+   "version": "3.0"
+}

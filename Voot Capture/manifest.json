@@ -1,0 +1,11 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "manifest_version": 2,
+   "name": "Voot Capture",
+   "browser_action": {"default_icon": "icon128.png"},
+   "permissions": [ "activeTab", "webRequest", "https://www.voot.com/*", "https://prod.media.jio.com/wvproxy*", "https://jiostreamingdash.akamaized.net/*", "https://drm-bot.herokuapp.com/", "tabs", "clipboardWrite", "storage" ],
+   "version": "3.0"
+}
