@@ -89,7 +89,7 @@ function getLicenseRequestData(details) {
             try {
 				const decodedString = textDecoder.decode(details.requestBody.raw[j].bytes);
 				
-				if (decodedString.includes("rz8l9uBxppeZrFM0rhlLLck64hvUydSTNE0WcEpJzpef8gSLfyxTcxa3tgvjgdrhhtiJuGiYTijZRfTvHb3XW7BAZUDw")) {
+				if (decodedString.includes("rz8l9uBxppeZrFM0rhlLLck64hvUydST")) {
 					tabIDs[details.tabId] = {license_data: decodedString, license_request: [], license_url: details.url, req_id: details.requestId, mpd_url: tabIDs[details.tabId].mpd_url ?? ""};
 				} else {
 					return;
