@@ -102,7 +102,7 @@ function getLicenseRequestData(details) {
 }
 chrome.webRequest.onBeforeRequest.addListener(
     getLicenseRequestData,
-    { urls: ["https://drmv4-ax.learnyst.com/drmlicense/widevine", "https://streaming-cdn.learnyst.com/*", "https://sessions.bugsnag.com/"], types: ["xmlhttprequest"] },
+    { urls: ["https://drmv4-ax.learnyst.com/drmlicense/widevine", "https://streaming-cdn.learnyst.com/*", "https://sessions.bugsnag.com/", "https://drmv4-ax.learnyst.com/drmlicense/x-widevine"], types: ["xmlhttprequest"] },
 	["requestBody"]
 );
 
@@ -117,6 +117,6 @@ function getLicenseRequestHeaders(details) {
 }
 chrome.webRequest.onBeforeSendHeaders.addListener(
     getLicenseRequestHeaders,
-    { urls: ["https://drmv4-ax.learnyst.com/drmlicense/widevine"], types: ["xmlhttprequest"] },
+    { urls: ["https://drmv4-ax.learnyst.com/drmlicense/widevine", "https://drmv4-ax.learnyst.com/drmlicense/x-widevine"], types: ["xmlhttprequest"] },
     ["requestHeaders", "blocking"]
 );
