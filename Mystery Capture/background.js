@@ -132,7 +132,7 @@ function getLicenseRequestHeaders(details) {
 		
 		// Some license requests can hold one time token values in their headers or payload. So blocking such requests before they are sent to the server and capturing them!
 		// If your license request also holds one time values add them in the below line, seprating by an || operator. Remember to disable the extension if you actually need to play the video of these services!
-		if (details.url.includes("api2.hbogoasia.com/onwards-widevine") || details.requestHeaders.includes("prepladder.com") || details.url.includes("scvm1sc0.anycast.nagra.com") || details.url.includes("wvls/contentlicenseservice/v1/licenses")) {
+		if (details.url.includes("api2.hbogoasia.com/onwards-widevine") || details.requestHeaders.includes("prepladder.com") || details.url.includes("scvm1sc0.anycast.nagra.com") || details.url.includes("wvls/contentlicenseservice/v1/licenses") || details.url.includes("license.vdocipher.com/auth")) {
 			return { cancel: true };
 		}
 	}
