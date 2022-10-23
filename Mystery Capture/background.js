@@ -78,7 +78,7 @@ function requestToClipboard(tabId) {
 				
 function getLicenseRequestData(details) {
 	tabIDs[details.tabId] = tabIDs[details.tabId] || {};
-	if (details.url.includes(".mpd")) {
+	if (details.url.includes(".mpd") || details.url.includes(".ism") || details.url.includes("manifest")) {
 		console.log(details.url);
 		tabIDs[details.tabId].mpd_url = details.url;
 	} else if (details.requestBody && details.requestBody.raw && details.method == "POST") {
